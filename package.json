@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "movie-reviews",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kevquincke/movie-reviews.git",
+  "author": "Kevin Quincke <kevinqf14@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
