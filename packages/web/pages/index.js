@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
-import SearchBar from '../../shared/components/SearchBar';
 import styles from '../styles/Home.module.css';
+import SearchScreen from '../../shared/screens/SearchScreen';
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <SearchBar />
+        <SearchScreen />
       </main>
     </div>
   )

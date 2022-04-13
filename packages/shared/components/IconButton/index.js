@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pressable } from 'react-native';
-import { node, object, func } from 'prop-types';
+import { node, object, func, oneOfType, number } from 'prop-types';
 
 const IconButton = ({ icon, onPress, style }) => (
   <Pressable onPress={onPress} style={style}>
@@ -11,7 +11,7 @@ const IconButton = ({ icon, onPress, style }) => (
 IconButton.propTypes = {
   icon: node,
   onPress: func.isRequired,
-  style: object,
+  style: oneOfType([object, number]),
 }
 
 export default IconButton;

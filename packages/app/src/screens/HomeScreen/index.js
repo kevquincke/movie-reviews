@@ -1,12 +1,12 @@
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import SearchBar from '../../../../shared/components/SearchBar';
+import SearchScreen from '../../../../shared/screens/SearchScreen';
 import styles from './styles';
 
 const HomeScreen = () => (
   <SafeAreaView style={styles.container}>
-    <SearchBar />
+    <SearchScreen />
   </SafeAreaView>
 );
 

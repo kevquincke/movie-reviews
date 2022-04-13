@@ -13,6 +13,7 @@
     "@react-navigation/native": "^6.0.10",
     "@react-navigation/native-stack": "^6.6.1",
     "axios": "^0.26.1",
+    "humps": "^2.0.1",
     "query-string": "^7.1.1",
     "react-native": "0.68.0",
     "react-native-config": "^1.4.5",
