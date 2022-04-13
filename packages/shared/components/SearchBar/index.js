@@ -1,27 +1,19 @@
-import React, { useState } from 'react';
-import { TextInput, View } from 'react-native';
-import { string } from 'prop-types';
+import React, { useCallback } from 'react';
 
-import styles from './styles';
+import SearchInput from '../common/SearchInput';
+import SearchAPI from '../../api/nyTimesSearchAPI';
 
-const SearchBar = ({ placeholder }) => {
-  const [query, setQuery] = useState();
+const SearchBar = () => {
+  const onSearch = useCallback(async (searchTerm) => {
+    const response = await SearchAPI.doSearch(searchTerm);
+  }, []);
 
   return (
-    <View style={styles.container}>
-      <TextInput
-        onChangeText={setQuery}
-        value={query}
-        placeholder={placeholder}
-        style={styles.textInput}
-      />
-    </View>
+    <SearchInput
+      placeholder="Search for movie titles to get reviews"
+      onSearch={onSearch}
+    />
   );
-}
-
-SearchBar.propTypes = {
-  placeholder: string,
-  inputStyle: string,
 }
 
 export default SearchBar;

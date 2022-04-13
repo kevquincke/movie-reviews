@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^6.2.1",
     "next": "12.1.4",
+    "react-native-svg": "^12.3.0",
     "react-native-web": "^0.17.7"
   },
   "devDependencies": {

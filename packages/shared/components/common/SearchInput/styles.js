@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -13,7 +13,13 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 10,
     height: '100%',
-    outlineStyle: 'none'
+    ...Platform.select({ web: { outlineStyle: 'none' } }),
+  },
+  crossIcon: {
+    marginRight: 15,
+  },
+  magnifyGlassIcon: {
+    marginLeft: 10,
   },
 });
 

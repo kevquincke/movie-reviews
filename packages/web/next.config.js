@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+
 const path = require('path');
 
 const nextConfig = {
@@ -21,6 +22,11 @@ const nextConfig = {
       test: /\.+(js|jsx)$/,
       use: defaultLoaders.babel,
       include: [path.resolve(__dirname, '..', 'shared')],
+    })
+
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"],
     })
 
     return config;

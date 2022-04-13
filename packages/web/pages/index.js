@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <SearchBar placeholder="Search for movie titles to get reviews" />
+        <SearchBar />
       </main>
     </div>
   )

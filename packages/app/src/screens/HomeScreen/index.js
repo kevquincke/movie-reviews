@@ -6,7 +6,7 @@ import styles from './styles';
 
 const HomeScreen = () => (
   <SafeAreaView style={styles.container}>
-    <SearchBar placeholder="Search for movie titles to get reviews" />
+    <SearchBar />
   </SafeAreaView>
 );
 
